@@ -24,7 +24,6 @@ while current:
 
 print()
 
-
 # Getting the length of a given linked list
 def get_length(head: ListNode) -> int:
     count = 0
