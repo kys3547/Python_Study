@@ -12,7 +12,6 @@ A word is a maximal substring consisting of non-space characters only.
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         s = s.strip()
-        # print(s)
         i = len(s) - 1 # the index of the end of s
 
         while i >= 0:
@@ -20,6 +19,8 @@ class Solution:
                 return len(s) - 1 - i
             else:
                 i -= 1
+
+        return len(s)
 
 solution = Solution()
 
