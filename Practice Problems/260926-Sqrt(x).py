@@ -60,5 +60,12 @@ Memory: 19.30MB, beats 55.80%
 
 Pathetic! There must be a better answer.
 
+Try using binary search. Set left = 0 and right = x.
+Then compare mid * mid and x.
+If x is bigger than mid**2, it means that current mid is a possible answer.
+Store mid into temp and move mid to left + 1
 
+If x is smaller than mid**2, it means that current mid is not the answer,
+because the answer should be always smaller than x
+So move mid to right - 1
 """
