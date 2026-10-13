@@ -9,7 +9,11 @@ You must implement a solution with a linear runtime complexity and use only cons
 """
 
 
-#class Solution:
-#    def singleNumber(self, nums: list[int]) -> int:
+class Solution:
+    def singleNumber(self, nums: list[int]) -> int:
+        result = 0
 
-print(4^2^1^2^1)
+        for num in nums:
+            result = result ^ num
+
+        return result
